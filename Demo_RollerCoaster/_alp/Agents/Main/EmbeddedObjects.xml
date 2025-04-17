@@ -26,6 +26,9 @@
 		<Parameters>
 			<Parameter>
 				<Name><![CDATA[arrivalType]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[self.MANUAL]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[rate]]></Name>
@@ -160,9 +163,6 @@
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[changeDimensions]]></Name>
-				<Value Class="CodeValue">
-					<Code><![CDATA[true]]></Code>
-				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[length]]></Name>
@@ -387,7 +387,7 @@
 	<EmbeddedObject>
 		<Id>1744856484252</Id>
 		<Name><![CDATA[moveTo1]]></Name>
-		<X>210</X>
+		<X>240</X>
 		<Y>100</Y>
 		<Label>
 			<X>-5</X>
@@ -556,6 +556,9 @@
 		<Parameters>
 			<Parameter>
 				<Name><![CDATA[onEnter]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[source.inject(1);]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[destroyEntity]]></Name>

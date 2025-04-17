@@ -3,7 +3,7 @@
 	<Rectangle>
 		<Id>1744856756748</Id>
 		<Name><![CDATA[rectangle]]></Name>
-		<X>-30</X>
+		<X>-25</X>
 		<Y>-10</Y>
 		<Label>
 			<X>10</X>
@@ -20,8 +20,8 @@
 		<LineColor>1226739967</LineColor>
 		<LineMaterial>null</LineMaterial>
 		<LineStyle>SOLID</LineStyle>
-		<Width>70</Width>
-		<Height>30</Height>
+		<Width>50</Width>
+		<Height>20</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-1580366529</FillColor>
 		<FillMaterial>null</FillMaterial>
@@ -29,8 +29,8 @@
 	<Group>
 		<Id>1744857399474</Id>
 		<Name><![CDATA[motorcycle]]></Name>
-		<X>0</X>
-		<Y>0</Y>
+		<X>0.5</X>
+		<Y>-4.5</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -128,6 +128,189 @@
 			<Figure3D>
 				<Id>1744857399478</Id>
 				<Name><![CDATA[rider]]></Name>
+				<X>0</X>
+				<Y>0</Y>
+				<Label>
+					<X>0</X>
+					<Y>-10</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+				<X>0</X>
+				<Y>0</Y>
+				<Z>0</Z>
+				<Label>
+					<X>0</X>
+					<Y>-10</Y>
+				</Label>
+				<ResourceReference>
+					<PackageName>demo_rollercoaster</PackageName>
+					<ClassName>3d/rider_position_2.dae</ClassName>
+				</ResourceReference>
+				<ColorTable>
+					<ColorMapping>
+						<Name><![CDATA[MA_material_10]]></Name>
+						<OriginalColor>-13686494</OriginalColor>
+					</ColorMapping>
+					<ColorMapping>
+						<Name><![CDATA[MA_material_4]]></Name>
+						<OriginalColor>-7256</OriginalColor>
+					</ColorMapping>
+					<ColorMapping>
+						<Name><![CDATA[MA_material_9]]></Name>
+						<OriginalColor>-13686494</OriginalColor>
+					</ColorMapping>
+					<ColorMapping>
+						<Name><![CDATA[MA_material]]></Name>
+						<OriginalColor>-1</OriginalColor>
+					</ColorMapping>
+					<ColorMapping>
+						<Name><![CDATA[MA_material_0]]></Name>
+						<OriginalColor>-3285271</OriginalColor>
+					</ColorMapping>
+					<ColorMapping>
+						<Name><![CDATA[MA_material_2]]></Name>
+						<OriginalColor>-9868951</OriginalColor>
+					</ColorMapping>
+					<ColorMapping>
+						<Name><![CDATA[MA_material_5]]></Name>
+						<OriginalColor>-10790053</OriginalColor>
+					</ColorMapping>
+					<ColorMapping>
+						<Name><![CDATA[MA_material_7]]></Name>
+						<OriginalColor>-7256</OriginalColor>
+					</ColorMapping>
+					<ColorMapping>
+						<Name><![CDATA[MA_material_6]]></Name>
+						<OriginalColor>-56576</OriginalColor>
+					</ColorMapping>
+					<ColorMapping>
+						<Name><![CDATA[MA_material_8]]></Name>
+						<OriginalColor>-10790053</OriginalColor>
+					</ColorMapping>
+					<ColorMapping>
+						<Name><![CDATA[MA_material_3]]></Name>
+						<OriginalColor>-9868951</OriginalColor>
+					</ColorMapping>
+					<ColorMapping>
+						<Name><![CDATA[MA_material_1]]></Name>
+						<OriginalColor>-56576</OriginalColor>
+					</ColorMapping>
+				</ColorTable>
+				<AutoScale>true</AutoScale>
+				<Scale>1.0</Scale>
+				<Rotation>0.0</Rotation>
+				<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
+				<ApplyShading>true</ApplyShading>
+				<InternalLighting>OFF</InternalLighting>
+				<IgnoreSceneLights>false</IgnoreSceneLights>
+			</Figure3D>
+		</Presentation>
+	</Group>
+	<Group>
+		<Id>1744859673298</Id>
+		<Name><![CDATA[motorcycle1]]></Name>
+		<X>0.5</X>
+		<Y>5.5</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_3D</DrawMode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Rotation>0.0</Rotation>
+		<Presentation>
+			<Figure3D>
+				<Id>1744859673300</Id>
+				<Name><![CDATA[motorcycle_body1]]></Name>
+				<X>0</X>
+				<Y>0</Y>
+				<Label>
+					<X>0</X>
+					<Y>-10</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+				<X>0</X>
+				<Y>0</Y>
+				<Z>0</Z>
+				<Label>
+					<X>0</X>
+					<Y>-10</Y>
+				</Label>
+				<ResourceReference>
+					<PackageName>demo_rollercoaster</PackageName>
+					<ClassName>3d/motorcycle.dae</ClassName>
+				</ResourceReference>
+				<ColorTable>
+					<ColorMapping>
+						<Name><![CDATA[MA_material_10]]></Name>
+						<OriginalColor>-11776948</OriginalColor>
+					</ColorMapping>
+					<ColorMapping>
+						<Name><![CDATA[MA_material_4]]></Name>
+						<OriginalColor>-1</OriginalColor>
+					</ColorMapping>
+					<ColorMapping>
+						<Name><![CDATA[MA_material_5]]></Name>
+						<OriginalColor>-3285271</OriginalColor>
+					</ColorMapping>
+					<ColorMapping>
+						<Name><![CDATA[MA_material_3]]></Name>
+						<OriginalColor>-1</OriginalColor>
+					</ColorMapping>
+					<ColorMapping>
+						<Name><![CDATA[MA_material_9]]></Name>
+						<OriginalColor>-16777216</OriginalColor>
+					</ColorMapping>
+					<ColorMapping>
+						<Name><![CDATA[MA_material_8]]></Name>
+						<OriginalColor>-16777216</OriginalColor>
+					</ColorMapping>
+					<ColorMapping>
+						<Name><![CDATA[MA_material_6]]></Name>
+						<OriginalColor>-13421260</OriginalColor>
+					</ColorMapping>
+					<ColorMapping>
+						<Name><![CDATA[MA_material_7]]></Name>
+						<OriginalColor>-11973558</OriginalColor>
+					</ColorMapping>
+					<ColorMapping>
+						<Name><![CDATA[MA_material_2]]></Name>
+						<OriginalColor>-60160</OriginalColor>
+					</ColorMapping>
+					<ColorMapping>
+						<Name><![CDATA[MA_material_1]]></Name>
+						<OriginalColor>-7436666</OriginalColor>
+					</ColorMapping>
+					<ColorMapping>
+						<Name><![CDATA[MA_material_0]]></Name>
+						<OriginalColor>-13948117</OriginalColor>
+					</ColorMapping>
+					<ColorMapping>
+						<Name><![CDATA[MA_material]]></Name>
+						<OriginalColor>-10790053</OriginalColor>
+					</ColorMapping>
+				</ColorTable>
+				<AutoScale>true</AutoScale>
+				<Scale>1.0</Scale>
+				<Rotation>0.0</Rotation>
+				<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
+				<ApplyShading>true</ApplyShading>
+				<InternalLighting>OFF</InternalLighting>
+				<IgnoreSceneLights>false</IgnoreSceneLights>
+			</Figure3D>
+			<Figure3D>
+				<Id>1744859673302</Id>
+				<Name><![CDATA[rider1]]></Name>
 				<X>0</X>
 				<Y>0</Y>
 				<Label>
