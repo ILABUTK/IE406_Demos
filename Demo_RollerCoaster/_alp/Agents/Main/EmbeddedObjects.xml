@@ -83,6 +83,9 @@
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[locationType]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[self.LOCATION_NODE]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[locationX]]></Name>
@@ -113,6 +116,9 @@
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[locationNode]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[node]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[locationAttractor]]></Name>
