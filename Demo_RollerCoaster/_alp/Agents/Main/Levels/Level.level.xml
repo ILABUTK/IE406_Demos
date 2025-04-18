@@ -371,7 +371,7 @@
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 		<EmbeddedIcon>false</EmbeddedIcon>
-		<Z>25</Z>
+		<Z>45</Z>
 		<Rotation>0.0</Rotation>
 		<Presentation>
 			<Figure3D>
@@ -961,4 +961,43 @@
 			</Line>
 		</Presentation>
 	</Group>
+	<Figure3D>
+		<Id>1744990659063</Id>
+		<Name><![CDATA[object3d]]></Name>
+		<X>500</X>
+		<Y>130</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<X>500</X>
+		<Y>130</Y>
+		<Z>25</Z>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<ResourceReference>
+			<PackageName>demo_rollercoaster</PackageName>
+			<ClassName>3d/cat.dae</ClassName>
+		</ResourceReference>
+		<ColorTable>
+			<ColorMapping>
+				<Name><![CDATA[Mat]]></Name>
+				<OriginalColor>-3355444</OriginalColor>
+				<Color>-3308225</Color>
+			</ColorMapping>
+		</ColorTable>
+		<AutoScale>true</AutoScale>
+		<Scale>10.0</Scale>
+		<Rotation>0.0</Rotation>
+		<AxisOrder>YZX_AXIS_ORDER</AxisOrder>
+		<ApplyShading>true</ApplyShading>
+		<InternalLighting>INSIDE</InternalLighting>
+		<IgnoreSceneLights>false</IgnoreSceneLights>
+	</Figure3D>
 </Presentation>

@@ -60,4 +60,9 @@
 		<ReferencedFromUserCode>false</ReferencedFromUserCode>
 		<Location>FILE_SYSTEM</Location>
 	</Resource>
+	<Resource>
+		<Path>3d/cat.dae</Path>
+		<ReferencedFromUserCode>false</ReferencedFromUserCode>
+		<Location>FILE_SYSTEM</Location>
+	</Resource>
 </ModelResources>
