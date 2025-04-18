@@ -17,7 +17,7 @@
 	<LimitNumberOfArrayElements>false</LimitNumberOfArrayElements>
 	<ElementsLimitValue>100</ElementsLimitValue>
 	<MakeDefaultViewArea>true</MakeDefaultViewArea>
-	<SceneGridColor/>
+	<SceneGridColor>-1</SceneGridColor>
 	<SceneBackgroundColor/>
 	<SceneSkybox>null</SceneSkybox>
 	<AgentProperties>
@@ -28,6 +28,7 @@
 			<Code><![CDATA[10]]></Code>
 			<Unit Class="SpeedUnits">MPS</Unit>
 		</VelocityCode>
+		<AfterStepCode/>
 		<PhysicalLength Class="CodeUnitValue">
 			<Code><![CDATA[1]]></Code>
 			<Unit Class="LengthUnits">METER</Unit>
@@ -42,11 +43,23 @@
 		</PhysicalHeight>
 	</AgentProperties>
 	<EnvironmentProperties>
-		<EnableSteps>false</EnableSteps>
+		<EnableSteps>true</EnableSteps>
 		<StepDurationCode Class="CodeUnitValue">
 			<Code><![CDATA[1.0]]></Code>
 			<Unit Class="TimeUnits">SECOND</Unit>
 		</StepDurationCode>
+		<BeforeStepCode>double speed = 20; // pixels per step
+double boundary = 20; // right edge
+double startX = -60;  // left starting point
+
+double currentX = txtWelcome.getX();
+if (currentX &gt; boundary) {
+    txtWelcome.setX(startX); // loop back
+} else {
+    txtWelcome.setX(currentX + speed); // move right
+}
+</BeforeStepCode>
+		<AfterStepCode>traceln("stepping ...");</AfterStepCode>
 		<SpaceType>CONTINUOUS</SpaceType>
 		<WidthCode>500</WidthCode>
 		<HeightCode>500</HeightCode>

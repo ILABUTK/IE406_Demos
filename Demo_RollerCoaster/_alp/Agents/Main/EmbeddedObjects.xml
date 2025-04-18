@@ -125,6 +125,10 @@
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[speed]]></Name>
+				<Value Class="CodeUnitValue">
+					<Code><![CDATA[3]]></Code>
+					<Unit Class="SpeedUnits">MPS</Unit>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[newEntity]]></Name>
