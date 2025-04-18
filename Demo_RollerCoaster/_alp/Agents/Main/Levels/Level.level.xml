@@ -24,7 +24,7 @@
 		<Height>180</Height>
 		<Rotation>0.0</Rotation>
 		<FillColor>-1</FillColor>
-		<FillMaterial>grass</FillMaterial>
+		<FillMaterial>gravel</FillMaterial>
 	</Rectangle>
 	<Control Type="Window3D">
 		<Id>1744856196919</Id>
@@ -361,7 +361,7 @@
 		<Id>1744856883016</Id>
 		<Name><![CDATA[motorcycle]]></Name>
 		<X>450</X>
-		<Y>70</Y>
+		<Y>80</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -635,8 +635,8 @@
 	<Figure3D>
 		<Id>1744856921967</Id>
 		<Name><![CDATA[fire_big]]></Name>
-		<X>440</X>
-		<Y>20</Y>
+		<X>480</X>
+		<Y>80</Y>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -645,9 +645,9 @@
 		<PresentationFlag>true</PresentationFlag>
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-		<X>440</X>
-		<Y>20</Y>
-		<Z>0</Z>
+		<X>480</X>
+		<Y>80</Y>
+		<Z>15</Z>
 		<Label>
 			<X>0</X>
 			<Y>-10</Y>
@@ -671,7 +671,7 @@
 		<Rotation>0.0</Rotation>
 		<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
 		<ApplyShading>true</ApplyShading>
-		<InternalLighting>OFF</InternalLighting>
+		<InternalLighting>INSIDE</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
 	</Figure3D>
 	<Figure3D>
@@ -823,14 +823,15 @@
 			<ColorMapping>
 				<Name><![CDATA[MA_material_27]]></Name>
 				<OriginalColor>-16764597</OriginalColor>
+				<Color>-1795112961</Color>
 			</ColorMapping>
 		</ColorTable>
 		<AutoScale>true</AutoScale>
-		<Scale>1.0</Scale>
+		<Scale>4.0</Scale>
 		<Rotation>0.0</Rotation>
 		<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
 		<ApplyShading>true</ApplyShading>
-		<InternalLighting>OFF</InternalLighting>
+		<InternalLighting>GLOBAL</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
 	</Figure3D>
 	<Group>
@@ -997,7 +998,59 @@
 		<Rotation>0.0</Rotation>
 		<AxisOrder>YZX_AXIS_ORDER</AxisOrder>
 		<ApplyShading>true</ApplyShading>
-		<InternalLighting>INSIDE</InternalLighting>
+		<InternalLighting>GLOBAL</InternalLighting>
 		<IgnoreSceneLights>false</IgnoreSceneLights>
 	</Figure3D>
+	<Control Type="CheckBox">
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Id>1744992172784</Id>
+		<Name><![CDATA[checkbox]]></Name>
+		<X>810</X>
+		<Y>120</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<BasicProperties Width="170" Height="30">
+			<EmbeddedIcon>false</EmbeddedIcon>
+			<TextColor/>
+			<Enabled>true</Enabled>
+			<ActionCode>if (value) {
+
+	window3d.setCamera(vCurrent.camera, true); // true: to follow
+
+	window3d.setNavigationMode( WINDOW_3D_NAVIGATION_NONE );
+
+} else {
+
+	window3d.setCamera(camera, false); 
+
+	// window3d.setNavigationMode( WINDOW_3D_NAVIGATION_LIMITED_TO_Z_ABOVE_ZERO );
+	window3d.setNavigationMode( WINDOW_3D_NAVIGATION_FULL );
+} </ActionCode>
+		</BasicProperties>
+		<ExtendedProperties>
+			<Font Name="Dialog" Size="11" Style="0"/>
+			<LabelText>First Peron View</LabelText>
+			<LinkTo>false</LinkTo>
+		</ExtendedProperties>
+	</Control>
+	<Camera3D>
+		<Id>1744992342333</Id>
+		<Name><![CDATA[camera]]></Name>
+		<X>10</X>
+		<Y>310</Y>
+		<Z>100</Z>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<ShowLabel>false</ShowLabel>
+		<RotationX>20.0</RotationX>
+		<RotationZ>-45.0</RotationZ>
+	</Camera3D>
 </Presentation>

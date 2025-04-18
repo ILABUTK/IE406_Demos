@@ -392,4 +392,18 @@
 			</Figure3D>
 		</Presentation>
 	</Group>
+	<Camera3D>
+		<Id>1744991713111</Id>
+		<Name><![CDATA[camera]]></Name>
+		<X>-140</X>
+		<Y>0</Y>
+		<Z>100</Z>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<ShowLabel>false</ShowLabel>
+		<RotationX>34.0</RotationX>
+		<RotationZ>0.0</RotationZ>
+	</Camera3D>
 </Presentation>

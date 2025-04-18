@@ -679,6 +679,15 @@
 			</Presentation>
 
 				</Group>
+				<Camera3D>
+					<Id>1744991713111</Id>
+					<Name><![CDATA[camera]]></Name>
+					<X>-60</X><Y>0</Y><Z>65</Z>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<ShowLabel>false</ShowLabel>
+					<RotationX>34.0</RotationX>
+					<RotationZ>0.0</RotationZ>
+				</Camera3D>
 			</Presentation>
 
 				</Level>
@@ -793,6 +802,20 @@ if (currentX > boundary) {
 			</ScaleRuler>
 			<CurrentLevel>1744856179721</CurrentLevel>
 			<ConnectionsId>1744856179715</ConnectionsId>
+			<Variables>
+				<Variable Class="PlainVariable">
+					<Id>1744991844208</Id>
+					<Name><![CDATA[vCurrent]]></Name>
+					<X>50</X><Y>-100</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[Cart]]></Type>        
+					</Properties>
+				</Variable>
+			</Variables>
 			<Connectors>
 				<Connector>
 					<Id>1744856468208</Id>
@@ -894,6 +917,36 @@ if (currentX > boundary) {
 					</Points>
 				</Connector>
 			</Connectors>
+			<Functions>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>VOID</ReturnModificator>
+					<ReturnType><![CDATA[double]]></ReturnType>
+					<Id>1744992792632</Id>
+					<Name><![CDATA[fSetCam]]></Name>
+					<X>800</X><Y>-50</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Parameter>
+						<Name><![CDATA[fpv]]></Name>
+						<Type><![CDATA[boolean]]></Type>
+					</Parameter>
+					<Body><![CDATA[if (fpv) {
+
+	window3d.setCamera(vCurrent.camera, true); // true: to follow
+
+	window3d.setNavigationMode( WINDOW_3D_NAVIGATION_NONE );
+
+} else {
+
+	window3d.setCamera(camera, false); 
+
+	// window3d.setNavigationMode( WINDOW_3D_NAVIGATION_LIMITED_TO_Z_ABOVE_ZERO );
+	window3d.setNavigationMode( WINDOW_3D_NAVIGATION_FULL );
+} ]]></Body>
+				</Function>
+			</Functions>
 			<AgentLinks>
 				<AgentLink>
 					<Id>1744856179715</Id>
@@ -1133,6 +1186,11 @@ if (currentX > boundary) {
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[vCurrent = agent;
+
+fSetCam(checkbox.isSelected());]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onDiscard]]></Name>
@@ -1256,9 +1314,16 @@ if (currentX > boundary) {
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[movementType]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[self.MOVE_TRIP_TIME]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[tripTime]]></Name>
+							<Value Class="CodeUnitValue">
+								<Code><![CDATA[triangular( 1.5, 5, 7.5 )]]></Code>
+								<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[setSpeed]]></Name>
@@ -1404,9 +1469,16 @@ if (currentX > boundary) {
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[movementType]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[self.MOVE_TRIP_TIME]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[tripTime]]></Name>
+							<Value Class="CodeUnitValue">
+								<Code><![CDATA[triangular( 15, 25, 35 )]]></Code>
+								<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[setSpeed]]></Name>
@@ -1544,7 +1616,7 @@ if (currentX > boundary) {
 					<Height>180</Height>
 					<Rotation>0.0</Rotation>
 					<FillColor>-1</FillColor>
-					<FillMaterial>grass</FillMaterial>
+					<FillMaterial>gravel</FillMaterial>
 				</Rectangle>
 				<Control Type="Window3D">
 					<Id>1744856196919</Id>
@@ -1667,20 +1739,50 @@ if (currentX > boundary) {
 					</Width>
 					<Points>
 						<Point><X>0</X><Y>0</Y><Z>0</Z></Point>
-						<Point><X>0</X><Y>0</Y><Z>0</Z></Point>
+						<Point><X>25</X><Y>0</Y><Z>0</Z></Point>
 						<Point><X>25</X><Y>0</Y><Z>0</Z></Point>
 						<Point><X>50</X><Y>0</Y><Z>30</Z></Point>
 						<Point><X>25</X><Y>0</Y><Z>0</Z></Point>
-						<Point><X>75</X><Y>0</Y><Z>0</Z></Point>
-						<Point><X>170</X><Y>0</Y><Z>0</Z></Point>
-						<Point><X>145</X><Y>0</Y><Z>0</Z></Point>
-						<Point><X>195</X><Y>0</Y><Z>0</Z></Point>
-						<Point><X>380</X><Y>0</Y><Z>60</Z></Point>
-						<Point><X>355</X><Y>0</Y><Z>0</Z></Point>
-						<Point><X>405</X><Y>0</Y><Z>0</Z></Point>
-						<Point><X>560</X><Y>0</Y><Z>0</Z></Point>
-						<Point><X>535</X><Y>0</Y><Z>0</Z></Point>
-						<Point><X>535</X><Y>0</Y><Z>0</Z></Point>
+						<Point><X>72.845</X><Y>-10.153</Y><Z>0</Z></Point>
+						<Point><X>140</X><Y>-40</Y><Z>0</Z></Point>
+						<Point><X>117.155</X><Y>-29.847</Y><Z>0</Z></Point>
+						<Point><X>155.617</X><Y>-20.478</Y><Z>0</Z></Point>
+						<Point><X>220</X><Y>60</Y><Z>60</Z></Point>
+						<Point><X>204.383</X><Y>40.478</Y><Z>0</Z></Point>
+						<Point><X>243.117</X><Y>50.481</Y><Z>0</Z></Point>
+						<Point><X>390</X><Y>-10</Y><Z>0</Z></Point>
+						<Point><X>366.883</X><Y>-0.481</Y><Z>0</Z></Point>
+						<Point><X>412.361</X><Y>1.18</Y><Z>0</Z></Point>
+						<Point><X>470</X><Y>30</Y><Z>80</Z></Point>
+						<Point><X>447.639</X><Y>18.82</Y><Z>0</Z></Point>
+						<Point><X>494.9316938614177</X><Y>28.153207862117206</Y><Z>0</Z></Point>
+						<Point><X>580.063</X><Y>21.847</Y><Z>0</Z></Point>
+						<Point><X>555.131</X><Y>23.694</Y><Z>0</Z></Point>
+						<Point><X>576.595</X><Y>-2.911</Y><Z>0</Z></Point>
+						<Point><X>570</X><Y>-50</Y><Z>100</Z></Point>
+						<Point><X>573.468</X><Y>-25.242</Y><Z>0</Z></Point>
+						<Point><X>545.153</X><Y>-52.761</Y><Z>0</Z></Point>
+						<Point><X>480</X><Y>-60</Y><Z>20</Z></Point>
+						<Point><X>504.847</X><Y>-57.239</Y><Z>0</Z></Point>
+						<Point><X>455.153</X><Y>-57.239</Y><Z>0</Z></Point>
+						<Point><X>390</X><Y>-50</Y><Z>85</Z></Point>
+						<Point><X>414.847</X><Y>-52.761</Y><Z>0</Z></Point>
+						<Point><X>407.678</X><Y>-32.322</Y><Z>0</Z></Point>
+						<Point><X>440</X><Y>0</Y><Z>0</Z></Point>
+						<Point><X>422.322</X><Y>-17.678</Y><Z>0</Z></Point>
+						<Point><X>464.515</X><Y>-4.903</Y><Z>0</Z></Point>
+						<Point><X>540</X><Y>-20</Y><Z>75</Z></Point>
+						<Point><X>515.485</X><Y>-15.097</Y><Z>0</Z></Point>
+						<Point><X>546.063</X><Y>4.254</Y><Z>0</Z></Point>
+						<Point><X>560</X><Y>60</Y><Z>0</Z></Point>
+						<Point><X>553.937</X><Y>35.746</Y><Z>0</Z></Point>
+						<Point><X>581.437</X><Y>47.138</Y><Z>0</Z></Point>
+						<Point><X>660</X><Y>0</Y><Z>0</Z></Point>
+						<Point><X>638.563</X><Y>12.862</Y><Z>0</Z></Point>
+						<Point><X>685</X><Y>0</Y><Z>0</Z></Point>
+						<Point><X>750</X><Y>0</Y><Z>0</Z></Point>
+						<Point><X>725</X><Y>0</Y><Z>0</Z></Point>
+						<Point><X>725</X><Y>0</Y><Z>0</Z></Point>
 					</Points>
 					<Bidirectional>true</Bidirectional>
 					<SpeedLimit>false</SpeedLimit>
@@ -1694,7 +1796,7 @@ if (currentX > boundary) {
 				<PointNode>
 					<Id>1744856691932</Id>
 					<Name><![CDATA[node2]]></Name>
-					<X>800</X><Y>50</Y>
+					<X>1000</X><Y>50</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2144,14 +2246,15 @@ if (currentX > boundary) {
 						<ColorMapping>
 							<Name><![CDATA[MA_material_27]]></Name>
 							<OriginalColor>-16764597</OriginalColor>
+							<Color>-1795112961</Color>
 						</ColorMapping>
 					</ColorTable>
 					<AutoScale>true</AutoScale>
-					<Scale>1.0</Scale>
+					<Scale>4.0</Scale>
 					<Rotation>0.0</Rotation>
 					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
 					<ApplyShading>true</ApplyShading>
-					<InternalLighting>OFF</InternalLighting>
+					<InternalLighting>GLOBAL</InternalLighting>
 					<IgnoreSceneLights>false</IgnoreSceneLights>
 </Figure3D>
 				<Group>
@@ -2294,6 +2397,37 @@ if (currentX > boundary) {
 					<InternalLighting>GLOBAL</InternalLighting>
 					<IgnoreSceneLights>false</IgnoreSceneLights>
 </Figure3D>
+				<Control Type="CheckBox">
+				 	<EmbeddedIcon>false</EmbeddedIcon>				
+					<Id>1744992172784</Id>
+					<Name><![CDATA[checkbox]]></Name>
+					<X>810</X><Y>120</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<BasicProperties Width="170" Height="30">
+                        <EmbeddedIcon>false</EmbeddedIcon>	
+						<TextColor/>
+						<Enabled>true</Enabled>
+						<ActionCode><![CDATA[fSetCam(value);]]></ActionCode>
+					</BasicProperties>
+					<ExtendedProperties>
+						<Font Name="Dialog" Size="11" Style="0"/>
+						<LabelText><![CDATA[First Peron View]]></LabelText>
+						<LinkTo>false</LinkTo>
+	 				</ExtendedProperties>
+				</Control>
+				<Camera3D>
+					<Id>1744992342333</Id>
+					<Name><![CDATA[camera]]></Name>
+					<X>10</X><Y>310</Y><Z>100</Z>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<ShowLabel>false</ShowLabel>
+					<RotationX>20.0</RotationX>
+					<RotationZ>-45.0</RotationZ>
+				</Camera3D>
 			</Presentation>
 
 				</Level>

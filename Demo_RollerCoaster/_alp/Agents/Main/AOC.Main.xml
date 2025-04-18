@@ -106,6 +106,7 @@ if (currentX &gt; boundary) {
 	</ScaleRuler>
 	<CurrentLevel>1744856179721</CurrentLevel>
 	<ConnectionsId>1744856179715</ConnectionsId>
+	<Variables xmlns:al="http://anylogic.com"/>
 	<AgentLinks>
 		<AgentLink>
 			<Id>1744856179715</Id>

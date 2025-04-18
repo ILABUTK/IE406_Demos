@@ -217,6 +217,23 @@
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onExit]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[vCurrent = agent;
+
+if (checkbox.isSelected()) {
+
+	window3d.setCamera(vCurrent.camera, true);
+
+	window3d.setNavigationMode( WINDOW_3D_NAVIGATION_NONE );
+
+} else {
+
+	window3d.setCamera(camera, true);
+
+	window3d.setNavigationMode( WINDOW_3D_NAVIGATION_LIMITED_TO_Z_ABOVE_ZERO );
+
+} ]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[onDiscard]]></Name>
