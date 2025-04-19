@@ -220,19 +220,7 @@
 				<Value Class="CodeValue">
 					<Code><![CDATA[vCurrent = agent;
 
-if (checkbox.isSelected()) {
-
-	window3d.setCamera(vCurrent.camera, true);
-
-	window3d.setNavigationMode( WINDOW_3D_NAVIGATION_NONE );
-
-} else {
-
-	window3d.setCamera(camera, true);
-
-	window3d.setNavigationMode( WINDOW_3D_NAVIGATION_LIMITED_TO_Z_ABOVE_ZERO );
-
-} ]]></Code>
+fSetCam(checkbox.isSelected());]]></Code>
 				</Value>
 			</Parameter>
 			<Parameter>
@@ -359,9 +347,16 @@ if (checkbox.isSelected()) {
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[movementType]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[self.MOVE_TRIP_TIME]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[tripTime]]></Name>
+				<Value Class="CodeUnitValue">
+					<Code><![CDATA[triangular( 1.5, 5, 7.5 )]]></Code>
+					<Unit Class="TimeUnits">SECOND</Unit>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[setSpeed]]></Name>
@@ -509,9 +504,16 @@ if (checkbox.isSelected()) {
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[movementType]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[self.MOVE_TRIP_TIME]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[tripTime]]></Name>
+				<Value Class="CodeUnitValue">
+					<Code><![CDATA[triangular( 15, 25, 35 )]]></Code>
+					<Unit Class="TimeUnits">SECOND</Unit>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[setSpeed]]></Name>

@@ -197,7 +197,7 @@
 						<Z>0</Z>
 					</Point>
 					<Point>
-						<X>0</X>
+						<X>25</X>
 						<Y>0</Y>
 						<Z>0</Z>
 					</Point>
@@ -217,52 +217,202 @@
 						<Z>0</Z>
 					</Point>
 					<Point>
-						<X>75</X>
-						<Y>0</Y>
+						<X>72.845</X>
+						<Y>-10.153</Y>
 						<Z>0</Z>
 					</Point>
 					<Point>
-						<X>170</X>
-						<Y>0</Y>
+						<X>140</X>
+						<Y>-40</Y>
 						<Z>0</Z>
 					</Point>
 					<Point>
-						<X>145</X>
-						<Y>0</Y>
+						<X>117.155</X>
+						<Y>-29.847</Y>
 						<Z>0</Z>
 					</Point>
 					<Point>
-						<X>195</X>
-						<Y>0</Y>
+						<X>155.617</X>
+						<Y>-20.478</Y>
 						<Z>0</Z>
 					</Point>
 					<Point>
-						<X>380</X>
-						<Y>0</Y>
+						<X>220</X>
+						<Y>60</Y>
 						<Z>60</Z>
 					</Point>
 					<Point>
-						<X>355</X>
+						<X>204.383</X>
+						<Y>40.478</Y>
+						<Z>0</Z>
+					</Point>
+					<Point>
+						<X>243.117</X>
+						<Y>50.481</Y>
+						<Z>0</Z>
+					</Point>
+					<Point>
+						<X>390</X>
+						<Y>-10</Y>
+						<Z>0</Z>
+					</Point>
+					<Point>
+						<X>366.883</X>
+						<Y>-0.481</Y>
+						<Z>0</Z>
+					</Point>
+					<Point>
+						<X>412.361</X>
+						<Y>1.18</Y>
+						<Z>0</Z>
+					</Point>
+					<Point>
+						<X>470</X>
+						<Y>30</Y>
+						<Z>80</Z>
+					</Point>
+					<Point>
+						<X>447.639</X>
+						<Y>18.82</Y>
+						<Z>0</Z>
+					</Point>
+					<Point>
+						<X>494.9316938614177</X>
+						<Y>28.153207862117206</Y>
+						<Z>0</Z>
+					</Point>
+					<Point>
+						<X>580.063</X>
+						<Y>21.847</Y>
+						<Z>0</Z>
+					</Point>
+					<Point>
+						<X>555.131</X>
+						<Y>23.694</Y>
+						<Z>0</Z>
+					</Point>
+					<Point>
+						<X>576.595</X>
+						<Y>-2.911</Y>
+						<Z>0</Z>
+					</Point>
+					<Point>
+						<X>570</X>
+						<Y>-50</Y>
+						<Z>100</Z>
+					</Point>
+					<Point>
+						<X>573.468</X>
+						<Y>-25.242</Y>
+						<Z>0</Z>
+					</Point>
+					<Point>
+						<X>545.153</X>
+						<Y>-52.761</Y>
+						<Z>0</Z>
+					</Point>
+					<Point>
+						<X>480</X>
+						<Y>-60</Y>
+						<Z>20</Z>
+					</Point>
+					<Point>
+						<X>504.847</X>
+						<Y>-57.239</Y>
+						<Z>0</Z>
+					</Point>
+					<Point>
+						<X>455.153</X>
+						<Y>-57.239</Y>
+						<Z>0</Z>
+					</Point>
+					<Point>
+						<X>390</X>
+						<Y>-50</Y>
+						<Z>85</Z>
+					</Point>
+					<Point>
+						<X>414.847</X>
+						<Y>-52.761</Y>
+						<Z>0</Z>
+					</Point>
+					<Point>
+						<X>407.678</X>
+						<Y>-32.322</Y>
+						<Z>0</Z>
+					</Point>
+					<Point>
+						<X>440</X>
 						<Y>0</Y>
 						<Z>0</Z>
 					</Point>
 					<Point>
-						<X>405</X>
-						<Y>0</Y>
+						<X>422.322</X>
+						<Y>-17.678</Y>
+						<Z>0</Z>
+					</Point>
+					<Point>
+						<X>464.515</X>
+						<Y>-4.903</Y>
+						<Z>0</Z>
+					</Point>
+					<Point>
+						<X>540</X>
+						<Y>-20</Y>
+						<Z>75</Z>
+					</Point>
+					<Point>
+						<X>515.485</X>
+						<Y>-15.097</Y>
+						<Z>0</Z>
+					</Point>
+					<Point>
+						<X>546.063</X>
+						<Y>4.254</Y>
 						<Z>0</Z>
 					</Point>
 					<Point>
 						<X>560</X>
+						<Y>60</Y>
+						<Z>0</Z>
+					</Point>
+					<Point>
+						<X>553.937</X>
+						<Y>35.746</Y>
+						<Z>0</Z>
+					</Point>
+					<Point>
+						<X>581.437</X>
+						<Y>47.138</Y>
+						<Z>0</Z>
+					</Point>
+					<Point>
+						<X>660</X>
 						<Y>0</Y>
 						<Z>0</Z>
 					</Point>
 					<Point>
-						<X>535</X>
+						<X>638.563</X>
+						<Y>12.862</Y>
+						<Z>0</Z>
+					</Point>
+					<Point>
+						<X>685</X>
 						<Y>0</Y>
 						<Z>0</Z>
 					</Point>
 					<Point>
-						<X>535</X>
+						<X>750</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Point>
+					<Point>
+						<X>725</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Point>
+					<Point>
+						<X>725</X>
 						<Y>0</Y>
 						<Z>0</Z>
 					</Point>
@@ -279,7 +429,7 @@
 			<PointNode>
 				<Id>1744856691932</Id>
 				<Name><![CDATA[node2]]></Name>
-				<X>800</X>
+				<X>1000</X>
 				<Y>50</Y>
 				<Label>
 					<X>10</X>
@@ -1019,19 +1169,7 @@
 			<EmbeddedIcon>false</EmbeddedIcon>
 			<TextColor/>
 			<Enabled>true</Enabled>
-			<ActionCode>if (value) {
-
-	window3d.setCamera(vCurrent.camera, true); // true: to follow
-
-	window3d.setNavigationMode( WINDOW_3D_NAVIGATION_NONE );
-
-} else {
-
-	window3d.setCamera(camera, false); 
-
-	// window3d.setNavigationMode( WINDOW_3D_NAVIGATION_LIMITED_TO_Z_ABOVE_ZERO );
-	window3d.setNavigationMode( WINDOW_3D_NAVIGATION_FULL );
-} </ActionCode>
+			<ActionCode>fSetCam(value);</ActionCode>
 		</BasicProperties>
 		<ExtendedProperties>
 			<Font Name="Dialog" Size="11" Style="0"/>
