@@ -122,6 +122,44 @@
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[newEntity]]></Name>
+				<Value Class="EntityCodeValue">
+					<IsAgentEntity>true</IsAgentEntity>
+					<EntityEmbeddedObject>
+						<ActiveObjectClass>
+							<PackageName>demo_tiny_mhl</PackageName>
+							<ClassName>SKU</ClassName>
+						</ActiveObjectClass>
+						<GenericParameterSubstitute>
+							<GenericParameterSubstituteReference>
+								<PackageName>demo_tiny_mhl</PackageName>
+								<ClassName>SKU</ClassName>
+								<ItemName>1745069148079</ItemName>
+							</GenericParameterSubstituteReference>
+						</GenericParameterSubstitute>
+						<Parameters/>
+						<ReplicationFlag>true</ReplicationFlag>
+						<Replication Class="CodeValue">
+							<Code><![CDATA[100]]></Code>
+						</Replication>
+						<CollectionType>ARRAY_LIST_BASED</CollectionType>
+						<InitialLocationType>XYZ</InitialLocationType>
+						<ColumnCode Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</ColumnCode>
+						<RowCode Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</RowCode>
+						<LocationNameCode Class="CodeValue">
+							<Code><![CDATA[""]]></Code>
+						</LocationNameCode>
+						<InitializationType>LOAD_FROM_DATABASE</InitializationType>
+						<InitializationDatabaseTableQuery>
+							<TableReference/>
+						</InitializationDatabaseTableQuery>
+						<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+						<QuantityColumn/>
+					</EntityEmbeddedObject>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[changeDimensions]]></Name>
