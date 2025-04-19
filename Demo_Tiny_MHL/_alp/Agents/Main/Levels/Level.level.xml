@@ -3,8 +3,8 @@
 	<RackStorage>
 		<Id>1745068613242</Id>
 		<Name><![CDATA[storage]]></Name>
-		<X>520</X>
-		<Y>80</Y>
+		<X>560</X>
+		<Y>40</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -90,7 +90,7 @@
 			<QuantityColumn/>
 		</EmbeddedObject>
 		<Height Class="UnitValue">
-			<Value Class="Double">5</Value>
+			<Value Class="Double">24</Value>
 			<Unit Class="LengthUnits">METER</Unit>
 		</Height>
 		<Width Class="UnitValue">
@@ -110,7 +110,7 @@
 			<Unit Class="LengthUnits">METER</Unit>
 		</SlotDepth>
 		<CellWidth Class="UnitValue">
-			<Value Class="Double">1</Value>
+			<Value Class="Double">0.96</Value>
 			<Unit Class="LengthUnits">METER</Unit>
 		</CellWidth>
 		<SingleUnitFirst>true</SingleUnitFirst>
@@ -123,7 +123,7 @@
 		<UnitsDefinition>NUMBER_OF_UNITS</UnitsDefinition>
 		<NumberOfUnits>4</NumberOfUnits>
 		<BaysDefinition>NUMBER_OF_BAYS</BaysDefinition>
-		<NumberOfBays>5</NumberOfBays>
+		<NumberOfBays>25</NumberOfBays>
 		<NumberOfCells>1</NumberOfCells>
 		<RackType>SELECTIVE</RackType>
 		<SkuFlow>LIFO</SkuFlow>
@@ -135,8 +135,8 @@
 	<PointNode>
 		<Id>1745068677387</Id>
 		<Name><![CDATA[node]]></Name>
-		<X>680</X>
-		<Y>100</Y>
+		<X>450</X>
+		<Y>250</Y>
 		<Label>
 			<X>10</X>
 			<Y>0</Y>
@@ -473,7 +473,7 @@
 		<Z>0</Z>
 		<LineColor>-3308225</LineColor>
 		<LineWidth>2</LineWidth>
-		<LineMaterial>null</LineMaterial>
+		<LineMaterial>floorMetal</LineMaterial>
 		<FillingType>HATCHED_AREA</FillingType>
 		<ZHeight>20</ZHeight>
 		<Rotation>0.0</Rotation>
@@ -494,7 +494,7 @@
 		<ShowLabel>false</ShowLabel>
 		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 		<Z>0</Z>
-		<LineColor>-3308225</LineColor>
+		<LineColor>-1822124563</LineColor>
 		<LineWidth>2</LineWidth>
 		<LineMaterial>null</LineMaterial>
 		<FillingType>HATCHED_AREA</FillingType>
@@ -624,7 +624,7 @@
 		<Z>0</Z>
 		<LineColor>-3308225</LineColor>
 		<LineWidth>2</LineWidth>
-		<LineMaterial>null</LineMaterial>
+		<LineMaterial>brickRed</LineMaterial>
 		<FillingType>HATCHED_AREA</FillingType>
 		<ZHeight>20</ZHeight>
 		<Rotation>0.0</Rotation>
