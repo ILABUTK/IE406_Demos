@@ -117,6 +117,25 @@
 			<LineArrowPosition>END</LineArrowPosition>
 		</AgentLink>
 	</AgentLinks>
+	<ContainerLinks>
+		<ContainerLink>
+			<Id>1745070707024</Id>
+			<Name><![CDATA[main]]></Name>
+			<X>50</X>
+			<Y>-100</Y>
+			<Label>
+				<X>10</X>
+				<Y>0</Y>
+			</Label>
+			<PublicFlag>false</PublicFlag>
+			<PresentationFlag>true</PresentationFlag>
+			<ShowLabel>true</ShowLabel>
+			<ActiveObjectClass>
+				<PackageName>demo_tiny_mhl</PackageName>
+				<ClassName>Main</ClassName>
+			</ActiveObjectClass>
+		</ContainerLink>
+	</ContainerLinks>
 	<Presentation>
 		<Level>
 			<Id>1745069148080</Id>

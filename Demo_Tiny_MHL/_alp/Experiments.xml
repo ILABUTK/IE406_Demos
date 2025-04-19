@@ -45,7 +45,7 @@
 			<Title>Model6 : Simulation</Title>
 			<EnableDeveloperPanel>true</EnableDeveloperPanel>
 			<ShowDeveloperPanelOnStart>false</ShowDeveloperPanelOnStart>
-			<RealTimeScale>1.0</RealTimeScale>
+			<RealTimeScale>50.0</RealTimeScale>
 		</PresentationProperties>
 		<ModelTimeProperties>
 			<StopOption>Never</StopOption>
