@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Variables>
+	<Variable Class="PlainVariable">
+		<Id>1628864332822</Id>
+		<Name><![CDATA[selectedViewArea]]></Name>
+		<X>850</X>
+		<Y>1280</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Properties SaveInSnapshot="true"
+              Constant="false"
+              AccessType="public"
+              StaticVariable="false">
+			<Type><![CDATA[ViewArea]]></Type>
+			<InitialValue Class="CodeValue">
+				<Code><![CDATA[view2D]]></Code>
+			</InitialValue>
+		</Properties>
+	</Variable>
+</Variables>

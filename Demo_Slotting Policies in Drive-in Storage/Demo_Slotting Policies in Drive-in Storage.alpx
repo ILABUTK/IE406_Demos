@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AnyLogicWorkspace splitVersion="1"
+                   WorkspaceVersion="1.9"
+                   AnyLogicVersion="8.9.3.202411201856"
+                   AlpVersion="8.9.2">
+	<Model>
+		<Id>1628610667513</Id>
+		<Name><![CDATA[Demo_Slotting Policies in Drive-in Storage]]></Name>
+		<Description><![CDATA[This small model demonstrates how different slotting policies can be used to put agents inside a Storage. Model focuses on the order of agent placement inside drive-in racks, though all the policies can be used in other types of storages as well.
+
+User defines a number of items to be stored and select any of the following policies:
+- placing in a random cell;
+- according to drive-in filling order: consequent placement in bays;
+- storing at a specific bay that is defined for each item.
+These settings are used in Store blocks that controls transporters to take items to the stores. 
+Once all items are stored, user can also start a retrieval process by defining a source storage and the number of items to be taken from it. User can also retrieve the particular agent by clicking on it.]]></Description>
+		<EngineVersion>6</EngineVersion>
+		<JavaPackageName><![CDATA[slotting_policies_in_drive_in_storage]]></JavaPackageName>
+		<ModelTimeUnit>Second</ModelTimeUnit>
+		<OptionLists>
+			<OptionList>
+				<Id>1628690364035</Id>
+				<Name><![CDATA[SKU_Type]]></Name>
+				<Option>
+					<Id>1628690364036</Id>
+					<Name><![CDATA[cereals]]></Name>
+				</Option>
+				<Option>
+					<Id>1628690364037</Id>
+					<Name><![CDATA[pastry]]></Name>
+				</Option>
+				<Option>
+					<Id>1628690364038</Id>
+					<Name><![CDATA[pasta]]></Name>
+				</Option>
+				<Option>
+					<Id>1628690364039</Id>
+					<Name><![CDATA[bread]]></Name>
+				</Option>
+			</OptionList>
+		</OptionLists>
+		<Folders/>
+		<ActiveObjectClasses/>
+		<DifferentialEquationsMethod>EULER</DifferentialEquationsMethod>
+		<MixedEquationsMethod>RK45_NEWTON</MixedEquationsMethod>
+		<AlgebraicEquationsMethod>MODIFIED_NEWTON</AlgebraicEquationsMethod>
+		<AbsoluteAccuracy>1.0E-5</AbsoluteAccuracy>
+		<FixedTimeStep>0.001</FixedTimeStep>
+		<RelativeAccuracy>1.0E-5</RelativeAccuracy>
+		<TimeAccuracy>1.0E-5</TimeAccuracy>
+		<Frame>
+			<Width>1050</Width>
+			<Height>900</Height>
+		</Frame>
+		<Database>
+			<Logging>false</Logging>
+			<AutoExport>false</AutoExport>
+			<ShutdownCompact>false</ShutdownCompact>
+			<ImportSettings/>
+			<ExportSettings/>
+		</Database>
+		<RunConfiguration ActiveObjectClassId="1628610667519">
+			<Id>1628610667523</Id>
+			<Name><![CDATA[RunConfiguration]]></Name>
+			<MaximumMemory>512</MaximumMemory>
+			<ModelTimeProperties>
+				<StopOption>Stop at specified time</StopOption>
+				<InitialDate>1628553600000</InitialDate>
+				<InitialTime>0.0</InitialTime>
+				<FinalDate>1631232000000</FinalDate>
+				<FinalTime>100.0</FinalTime>
+			</ModelTimeProperties>
+			<AnimationProperties>
+				<StopNever>true</StopNever>
+				<ExecutionMode>realTimeScaled</ExecutionMode>
+				<RealTimeScale>1.0</RealTimeScale>
+				<EnableZoomAndPanning>true</EnableZoomAndPanning>
+				<EnableDeveloperPanel>false</EnableDeveloperPanel>
+				<ShowDeveloperPanelOnStart>false</ShowDeveloperPanelOnStart>
+			</AnimationProperties>
+			<Inputs/>
+			<Outputs/>
+		</RunConfiguration>
+		<RequiredLibraryReference>
+			<LibraryName>com.anylogic.libraries.modules.markup_descriptors</LibraryName>
+			<VersionMajor>1</VersionMajor>
+			<VersionMinor>0</VersionMinor>
+			<VersionBuild>0</VersionBuild>
+		</RequiredLibraryReference>
+		<RequiredLibraryReference>
+			<LibraryName>com.anylogic.libraries.modules.rack_system_module</LibraryName>
+			<VersionMajor>1</VersionMajor>
+			<VersionMinor>0</VersionMinor>
+			<VersionBuild>0</VersionBuild>
+		</RequiredLibraryReference>
+		<RequiredLibraryReference>
+			<LibraryName>com.anylogic.libraries.processmodeling</LibraryName>
+			<VersionMajor>8</VersionMajor>
+			<VersionMinor>0</VersionMinor>
+			<VersionBuild>5</VersionBuild>
+		</RequiredLibraryReference>
+		<RequiredLibraryReference>
+			<LibraryName>com.anylogic.libraries.material_handling</LibraryName>
+			<VersionMajor>8</VersionMajor>
+			<VersionMinor>3</VersionMinor>
+			<VersionBuild>0</VersionBuild>
+		</RequiredLibraryReference>
+		<CloudModelUuid>a0e5e826-a517-44d6-86bc-cc37a99767fb</CloudModelUuid>
+	</Model>
+</AnyLogicWorkspace>

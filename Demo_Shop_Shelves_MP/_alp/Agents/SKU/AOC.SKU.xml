@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ActiveObjectClass>
 	<Id>1745029806890</Id>
-	<Name><![CDATA[Item]]></Name>
+	<Name><![CDATA[SKU]]></Name>
 	<Generic>false</Generic>
 	<GenericParameter>
 		<Id>1745029806896</Id>
@@ -92,6 +92,7 @@
 	</ScaleRuler>
 	<CurrentLevel>1745029806897</CurrentLevel>
 	<ConnectionsId>1745029806891</ConnectionsId>
+	<Variables xmlns:al="http://anylogic.com"/>
 	<AgentLinks>
 		<AgentLink>
 			<Id>1745029806891</Id>
@@ -152,6 +153,7 @@
 			<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 			<Z>0</Z>
 			<LevelVisibility>DIM_NON_CURRENT</LevelVisibility>
+			<Presentation xmlns:al="http://anylogic.com"/>
 		</Level>
 	</Presentation>
 </ActiveObjectClass>

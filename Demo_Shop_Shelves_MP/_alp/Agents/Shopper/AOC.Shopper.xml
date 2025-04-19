@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ActiveObjectClass>
-	<Id>1745029140903</Id>
-	<Name><![CDATA[Main]]></Name>
-	<Import><![CDATA[import java.util.stream.Collectors;
-]]></Import>
+	<Id>1745030436006</Id>
+	<Name><![CDATA[Shopper]]></Name>
 	<Generic>false</Generic>
 	<GenericParameter>
-		<Id>1745029140909</Id>
-		<Name><![CDATA[1745029140909]]></Name>
+		<Id>1745030436012</Id>
+		<Name><![CDATA[1745030436012]]></Name>
 		<GenericParameterValue Class="CodeValue">
 			<Code><![CDATA[T extends Agent]]></Code>
 		</GenericParameterValue>
@@ -18,7 +16,7 @@
 	<LimitNumberOfArrayElements>false</LimitNumberOfArrayElements>
 	<ElementsLimitValue>100</ElementsLimitValue>
 	<MakeDefaultViewArea>true</MakeDefaultViewArea>
-	<SceneGridColor>-1</SceneGridColor>
+	<SceneGridColor/>
 	<SceneBackgroundColor/>
 	<SceneSkybox>null</SceneSkybox>
 	<AgentProperties>
@@ -76,7 +74,7 @@
 		</RecurrenceCode>
 	</DatasetsCreationProperties>
 	<ScaleRuler>
-		<Id>1745029140906</Id>
+		<Id>1745030436009</Id>
 		<Name><![CDATA[scale]]></Name>
 		<X>0</X>
 		<Y>-150</Y>
@@ -92,11 +90,12 @@
 		<Scale>10</Scale>
 		<InheritedFromParentAgentType>true</InheritedFromParentAgentType>
 	</ScaleRuler>
-	<CurrentLevel>1745029140910</CurrentLevel>
-	<ConnectionsId>1745029140904</ConnectionsId>
+	<CurrentLevel>1745030436013</CurrentLevel>
+	<ConnectionsId>1745030436007</ConnectionsId>
+	<Variables xmlns:al="http://anylogic.com"/>
 	<AgentLinks>
 		<AgentLink>
-			<Id>1745029140904</Id>
+			<Id>1745030436007</Id>
 			<Name><![CDATA[connections]]></Name>
 			<X>50</X>
 			<Y>-50</Y>
@@ -119,10 +118,9 @@
 			<LineArrowPosition>END</LineArrowPosition>
 		</AgentLink>
 	</AgentLinks>
-	<EmbeddedObjects xmlns:al="http://anylogic.com"/>
 	<Presentation>
 		<Level>
-			<Id>1745029140910</Id>
+			<Id>1745030436013</Id>
 			<Name><![CDATA[level]]></Name>
 			<X>0</X>
 			<Y>0</Y>
