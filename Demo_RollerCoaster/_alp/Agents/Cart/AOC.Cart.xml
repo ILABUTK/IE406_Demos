@@ -22,7 +22,7 @@
 	<AgentProperties>
 		<EnvironmentDefinesInitialLocation>true</EnvironmentDefinesInitialLocation>
 		<RotateAnimationTowardsMovement>true</RotateAnimationTowardsMovement>
-		<RotateAnimationVertically>false</RotateAnimationVertically>
+		<RotateAnimationVertically>true</RotateAnimationVertically>
 		<VelocityCode Class="CodeUnitValue">
 			<Code><![CDATA[10]]></Code>
 			<Unit Class="SpeedUnits">MPS</Unit>
