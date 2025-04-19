@@ -348,6 +348,9 @@
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[transporterTaskPreemptionPolicy]]></Name>
+				<Value Class="CodeValue">
+					<Code><![CDATA[self.TPP_SEIZE_ANY_RESOURCE]]></Code>
+				</Value>
 			</Parameter>
 			<Parameter>
 				<Name><![CDATA[releaseMovingPolicy]]></Name>

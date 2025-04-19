@@ -2,7 +2,7 @@
 <ActiveObjectClass>
 	<Id>1745068506259</Id>
 	<Name><![CDATA[Main]]></Name>
-	<StartupCode><![CDATA[source.inject(10);]]></StartupCode>
+	<StartupCode><![CDATA[source.inject(200);]]></StartupCode>
 	<Generic>false</Generic>
 	<GenericParameter>
 		<Id>1745068506265</Id>
