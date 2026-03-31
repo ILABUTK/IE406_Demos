@@ -1,2 +1,4 @@
 # IE406_Demos
-For UTK ISE IE406 Class ...
+
+This repository is a demo repo for the IE406 Simulation class at the University of Tennessee, Knoxville.
+
