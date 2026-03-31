@@ -27,6 +27,7 @@ IE406 is an Industrial Systems Engineering simulation course at UTK. This repo h
 ## Notes
 
 - Models are class teaching examples and not production systems.
+- Some models may not be compatible with all versions of AnyLogic; use a version close to what was used in class (e.g., AnyLogic 8.x) or test and adapt as needed.
 - Adapt and extend for course projects and study.
 
 ## Tutorial
